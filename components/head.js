@@ -12,7 +12,7 @@ const Head = () => (
     <meta name="author" content="Jaden Lemmon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>Jaden Lemmon - Web Developer - Oklahoma City</title>
+    <title>Jaden Lemmon - Software Architect/Engineer - Oklahoma City</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"

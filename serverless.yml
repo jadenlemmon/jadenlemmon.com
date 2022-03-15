@@ -2,3 +2,5 @@ jadenSite:
   component: '@sls-next/serverless-component'
   inputs:
     domain: ['www', 'jadenlemmon.com']
+    cloudfront:
+      distributionId: EX5FW6S6DTJKI

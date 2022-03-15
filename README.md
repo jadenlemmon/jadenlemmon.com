@@ -20,7 +20,13 @@ npm run build
 
 ## Deploy
 
-Deployed via Serverless just run `serverless`
+Deployed via Serverless
+
+```bash
+# have to pin to specific serverless version
+# https://github.com/serverless-nextjs/serverless-next.js/issues/2320
+npx serverless@2.72.2
+```
 
 ## Bio
 
