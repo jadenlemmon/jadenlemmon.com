@@ -1,20 +1,24 @@
 const Footer = () => (
   <section id="contact">
     <div className="container">
-      <div className="col-md-12 text-center">
-        <h2>Still want more?</h2>
-        <p>There's always LinkedIn or GitHub.</p>
-        <div className="social">
-          <div className="box">
-            <a href="http://www.linkedin.com/pub/jaden-lemmon/40/11b/99a">
-              <i className="fa fa-linkedin"></i>
-            </a>
-          </div>
-          <div className="box">
-            <a href="https://github.com/jadenlemmon">
-              <i className="fa fa-github"></i>
-            </a>
-          </div>
+      <div className="social">
+        <div className="box col-sm-4 text-center">
+          <a
+            target="_blank"
+            href="http://www.linkedin.com/pub/jaden-lemmon/40/11b/99a"
+          >
+            <i className="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <div className="box col-sm-4 text-center">
+          <a target="_blank" href="https://github.com/jadenlemmon">
+            <i className="fa fa-github"></i>
+          </a>
+        </div>
+        <div className="box col-sm-4 text-center">
+          <a target="_blank" href="https://twitter.com/jadenlemmon">
+            <i className="fa fa-twitter"></i>
+          </a>
         </div>
       </div>
       <div className="divider"></div>

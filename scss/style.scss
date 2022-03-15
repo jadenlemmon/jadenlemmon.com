@@ -43,10 +43,13 @@ html {
 }
 
 .contain {
-  background: #eee;
   padding: 50px;
   margin-top: 40px;
   margin-bottom: 40px;
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
   span {
     font-size: 30px;
   }
@@ -58,41 +61,18 @@ html {
 }
 
 #hero {
-  background: url('/la_2019.jpg') no-repeat center center fixed;
+  background: url('/la_2019.jpg') no-repeat center center;
+  filter: grayscale(100%);
   background-size: cover;
+  display: flex;
   width: 100%;
   position: relative;
-  height: 800px;
-
-  .see-more {
-    position: absolute;
-    bottom: 30px;
-    width: 200px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-
-    h2,
-    p,
-    i {
-      color: black;
-    }
-
-    i {
-      font-size: 40px;
-    }
-  }
+  height: 900px;
 
   #text-contain {
-    position: absolute;
-    width: 600px;
-    height: 350px;
+    padding: 20px;
+    width: 711px;
     margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
 
     h1 {
       &:nth-child(1) {
@@ -103,70 +83,39 @@ html {
       color: #333;
       font-size: 70px;
       margin: 5px 0;
-      letter-spacing: -7px;
+      letter-spacing: -4px;
       float: left;
-      clear: both;
       padding-right: 10px;
     }
 
-    h3 {
-      margin-top: 4px;
+    h2 {
       float: left;
-      clear: both;
+      color: black;
+      letter-spacing: -3px;
+      line-height: 60px;
+      font-weight: lighter;
+      font-family: 'source code pro', sans-serif;
       background: #fff;
-      color: #333;
-    }
-
-    .sub {
-      position: absolute;
-      right: 0;
-      bottom: 22px;
-
-      h2 {
-        color: black;
-        letter-spacing: -3px;
-        line-height: 10px;
-        font-weight: lighter;
-        font-family: 'source code pro', sans-serif;
-      }
     }
   }
 }
 
 #about {
-  background: #eee url('/code.png') center / cover no-repeat;
+  padding: 90px 0;
 
-  .overlay {
-    background: rgba(255, 255, 255, 0.9);
-    height: 100%;
-    width: 100%;
-    padding: 100px 0;
+  h2 {
+    font-size: 40px;
+  }
 
-    h3 {
-      margin-top: 100px;
-    }
-
-    div {
-      a.arrow {
-        color: #808080;
-      }
-    }
-
-    i {
-      font-size: 40px;
-    }
+  p {
+    margin: 0 0 15px;
+    font-size: 18px;
   }
 }
 
 #projects {
   .project {
     padding: 80px 0;
-
-    &.stir {
-      img {
-        max-height: 243px;
-      }
-    }
 
     h2 {
       font-size: 35px;
@@ -177,23 +126,8 @@ html {
       margin-bottom: 15px;
       display: block;
     }
-    .img-contain {
-      height: 300px;
-      width: 100%;
-      max-width: 500px;
-      position: relative;
-      .interactive {
-        position: absolute;
-        width: 386px;
-        height: 241px;
-        background: #fff url('/printstash2.gif') center top/cover no-repeat;
-        left: 57px;
-        top: 19px;
-        display: none;
-      }
-    }
   }
-  .project:nth-child(even) {
+  .project:nth-child(odd) {
     background: #f2f2f2;
   }
 }
@@ -364,22 +298,14 @@ Tech Section
 #contact {
   background: #222;
   padding: 50px 0;
-  h2 {
-    //color: #fff;
-  }
   .social {
-    width: 165px;
+    width: 245px;
     margin: auto;
     .box {
-      &:nth-child(1) {
-        margin-right: 25px;
-      }
-      float: left;
-
       a {
         i.fa {
           color: #808080;
-          font-size: 80px;
+          font-size: 40px;
         }
       }
     }
@@ -387,15 +313,11 @@ Tech Section
   .emailPhone {
     width: 300px;
     margin: auto;
-    //p {
-    //  //color: #fff;
-    //  font-size: 20px;
-    //}
   }
   .divider {
     height: 1px;
     width: 100%;
-    background: #eee;
+    background: #343434;
     float: left;
     margin: 20px 0;
   }
@@ -447,17 +369,19 @@ Tech Section
 
 @media (max-width: 640px) {
   #hero {
-    overflow: hidden;
+    height: 700px;
     #text-contain {
-      position: relative;
-      width: 960px;
-      height: 375px;
-      .sub {
-        left: 311px;
-        bottom: 48px;
+      h1:first-child {
+        font-size: 100px;
+        letter-spacing: -9px;
+      }
+      h1 {
+        font-size: 50px;
+        letter-spacing: -3px;
       }
     }
   }
+
   .project {
     img {
       width: 100%;
@@ -470,16 +394,5 @@ Tech Section
   }
   #experiments {
     overflow: hidden;
-  }
-}
-
-@media (max-height: 675px) and (min-width: 640px) {
-  #hero {
-    #text-contain {
-      height: 600px;
-    }
-    .see-more {
-      display: none;
-    }
   }
 }

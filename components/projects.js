@@ -3,20 +3,18 @@ const projects = [
     id: 1,
     alternate: true,
     title: 'Voyage',
-    img: 'voyage',
+    img: 'voyage.png',
     website: 'voyageapp.io',
-    link:
-      'https://voyageapp.io?utm_source=jaden_portfolio&utm_medium=website&utm_campaign=general',
+    link: 'https://voyageapp.io?utm_source=jaden_portfolio&utm_medium=website&utm_campaign=general',
     labels: ['Node', 'JS', 'React', 'Docker'],
     description: `Voyage lets you build isolated environments in minutes and makes it easy to share your work with anyone, so you can spend more time coding.`,
   },
   {
     id: 2,
     title: 'Actovos',
-    img: 'actovos',
+    img: 'actovos.png',
     website: 'actovos.com',
-    link:
-      'http://actovos.com?utm_source=jaden_portfolio&utm_medium=website&utm_campaign=general',
+    link: 'http://actovos.com?utm_source=jaden_portfolio&utm_medium=website&utm_campaign=general',
     labels: ['PHP', 'JS', 'React'],
     description: `Actovos is web and mobile application that streamlines the process of connecting foster parents with children in need.`,
   },
@@ -24,10 +22,9 @@ const projects = [
     id: 3,
     alternate: true,
     title: 'Oyster Dating',
-    img: 'oyster',
+    img: 'oyster.png',
     website: 'oysterapp.io',
-    link:
-      'http://oysterapp.io?utm_source=jaden_portfolio&utm_medium=website&utm_campaign=general',
+    link: 'http://oysterapp.io?utm_source=jaden_portfolio&utm_medium=website&utm_campaign=general',
     labels: ['PHP', 'React', 'JS'],
     description: `Oyster is a location based dating application written in React Native. 
     Users are able to see other users in real-time at real locations. I was the lead developer on this project 
@@ -36,7 +33,7 @@ const projects = [
   {
     id: 4,
     title: 'JS Products - PDMS System',
-    img: 'jsp',
+    img: 'jsp.png',
     website: 'jsproducts.com',
     link: 'http://www.jsproducts.com',
     labels: ['Node.js', 'JS', 'React', 'Enterprise'],
@@ -47,11 +44,20 @@ const projects = [
     id: 5,
     alternate: true,
     title: 'Campaign Inbox',
-    img: 'campaign_inbox',
+    img: 'campaign_inbox.png',
     website: 'campaigninbox.com',
     link: 'http://campaigninbox.com/',
     labels: ['Python', 'JS', 'Enterprise', 'React', 'Typescript'],
     description: `I played a lead role building a front-end application with React and Typescript. The application interfaced with a Python based API.`,
+  },
+  {
+    id: 6,
+    title: 'Summit App',
+    img: 'summit.jpg',
+    website: 'summit.co',
+    link: 'https://summit.co',
+    labels: ['React', 'React-Native', 'Enterprise'],
+    description: `Played a key role in helping build and deploy a mobile app for Summit conferences around the world.`,
   },
 ];
 
@@ -63,7 +69,7 @@ const Project = ({ project }) => (
           project.alternate ? 'col-lg-push-6' : ''
         } col-md-6 text-center`}
       >
-        <img style={{ maxHeight: 300 }} src={`/${project.img}.png`} />
+        <img style={{ maxHeight: 300 }} src={`/${project.img}`} />
       </div>
       <div className={`${project.alternate ? 'col-lg-pull-6' : ''} col-md-6`}>
         <h2>{project.title}</h2>

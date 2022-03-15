@@ -16,7 +16,7 @@ const About = () => (
             <br />
             <br />
             I'm an Oklahoma native and have lived in Oklahoma my whole life. My
-            professional career spans 8+ years while my interest in Web
+            professional career spans 10+ years while my interest in Software
             Development started long before that. Since writing my first webpage
             in notepad while in the 4th grade, I knew exactly what I wanted to
             do. I started picking up freelance clients while in high school
@@ -34,8 +34,8 @@ const About = () => (
           </p>
 
           <p>
-            Even though I chose Web Development as my focus, I still enjoy a
-            number of other related topics such as video production, graphic
+            Even though I chose Software Development as my focus, I still enjoy
+            a number of other related topics such as video production, graphic
             design, print design, and marketing.
           </p>
 

@@ -7,7 +7,7 @@ const Head = () => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Jaden Lemmon - Full-Stack Developer - Oklahoma City"
+      content="Jaden Lemmon - Software Architect/Engineer - Oklahoma City"
     />
     <meta name="author" content="Jaden Lemmon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
