@@ -32,7 +32,7 @@ const Experiments = () => (
               other.
             </p>
           </div>
-          <a href="http://chat.jadenlemmon.com" target="_blank">
+          <a href="http://chat.jaden.fun" target="_blank">
             View
           </a>
         </div>

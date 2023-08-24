@@ -13,7 +13,7 @@
 
 ## Setup
 
-```
+```sh
 npm i
 npm run build
 ```
@@ -22,7 +22,7 @@ npm run build
 
 Deployed via Serverless
 
-```bash
+```sh
 # have to pin to specific serverless version
 # https://github.com/serverless-nextjs/serverless-next.js/issues/2320
 npx serverless@2.72.2
